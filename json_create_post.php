@@ -29,7 +29,7 @@ class JsonCreatePost {
         try {
             // uploading post to wordpress with featured image id
             $post = $client->post(
-                'posts', 
+                $this->data['blog'], 
                 [
                 'multipart' => [
                     [
